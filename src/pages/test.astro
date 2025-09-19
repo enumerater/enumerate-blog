@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+
+<!-- <BaseLayout pageTitle="Test Page">
+  <h2>这是一个测试页面</h2>
+  <p>用来测试一些功能。</p>
+</BaseLayout> -->
+
+<!-- <div class="contain">
+    123123
+</div> -->
+
+<!-- <div class="contain">
+
+</div> -->
+<!-- 
+<span class="span">2e2e2e</span>
+<span class="span">23232</span>
+<span class="span">23232323</span>
+
+<div class="cc">
+
+</div>
+
+
+<div class="re">
+
+</div>
+<style>
+    * {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+
+    .contain{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: 0.05s;
+    }
+
+    .contain:hover{
+        background-color: green;
+        transform: rotate(1deg);
+    }
+
+    .contain:active{
+        background-color: blue;
+        transform: rotate(0deg);
+    }
+
+    .span{
+        display: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .cc{
+        /* width: 600px; */
+        height: 100px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: green;
+        animation: move 2s infinite alternate;
+    }
+
+    .re{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        position: relative;
+    }
+</style> -->
+
+<meta charset="utf-8" />
+
+<div class="container">
+    <nav class="nav">
+        <ui>
+            <li><a href="/">首页</a></li>
+            <li><a href="/about/">关于</a></li>
+            <li><a href="/blog/">博客</a></li>
+            <li><a href="/tags/">标签</a></li>
+            <li><a href="/test/">test</a></li>
+        </ui>
+    </nav>
+
+    <section class="section">
+        section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+    </section>
+
+    <section class="section">
+        Lorem ipsum dolor sit amet,
+        <img src="../../public/favicon.svg" alt="Astro Logo" width="40" height="40" />
+        consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </section>
+
+    <section class="section">
+        注意观察当你调整浏览器窗口时发生了什么。效果很赞！
+    </section>
+</div>
+
+<style>
+    *{
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    .container{
+        width: 800px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        padding: 10px;
+    }
+
+    .nav{
+        width: 200px;
+        height: 150px;
+        border: 1px solid #000;
+        position: relative;
+    }
+
+    .nav ui{
+        position: relative;
+        left: 20px;
+    }
+
+    .section{
+        width: 500px;
+        border: 1px solid #000;
+        position: relative;
+        left: 200px;
+        bottom: 150px;
+    }
+
+    .section img{
+        float: right;
+        margin-right: 200px;
+    }
+
+    @media (max-width: 700px) {
+        .nav{
+            position: static;
+            display: inline;
+        }
+        .section {
+            position: static;
+            display: inline;
+        }
+
+        .container{
+            height: auto;
+        }
+
+        
+    }
+</style>
